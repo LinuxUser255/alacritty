@@ -88,7 +88,7 @@ curl -LO https://raw.githubusercontent.com/LinuxUser255/alacritty/master/config/
 
 This is a custom config:
 ```sh
-curl -LO https://raw.githubusercontent.com/LinuxUser255/BashAndLinux/main/Alacritty/alacritty.toml
+curl -LO https://raw.githubusercontent.com/LinuxUser255/alacritty/master/alacritty_config/alacritty.toml
 ```
 </br>
 
