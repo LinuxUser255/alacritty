@@ -1,13 +1,14 @@
 <p align="center">
     <img width="200" alt="Alacritty Logo" src="https://raw.githubusercontent.com/alacritty/alacritty/master/extra/logo/compat/alacritty-term%2Bscanlines.png">
 </p>
+<h1 align="center">Alacritty:  Blazingly Fast terminal emulator!</h1>
 
-<h1 align="center">Alacritty - A fast, cross-platform, OpenGL terminal emulator</h1>
+![Alacritty_my_README](https://github.com/LinuxUser255/alacritty/assets/46334926/f4ac6aa7-312a-4b9a-a41a-74bda7bfe70d)
 
-<p align="center">
-  <img alt="Alacritty - A fast, cross-platform, OpenGL terminal emulator"
-       src="extra/promo/alacritty-readme.png">
-</p>
+
+
+
+
 
 ## About
 
@@ -17,45 +18,47 @@ applications, rather than reimplementing their functionality, it manages to
 provide a flexible set of [features](./docs/features.md) with high performance.
 The supported platforms currently consist of BSD, Linux, macOS and Windows.
 
+
 The software is considered to be at a **beta** level of readiness; there are
 a few missing features and bugs to be fixed, but it is already used by many as
 a daily driver.
 
 Precompiled binaries are available from the [GitHub releases page](https://github.com/alacritty/alacritty/releases).
 
-Join [`#alacritty`] on libera.chat if you have questions or looking for a quick help.
+## About this fork
+This one is aimed at Linux and supporting use for legacy versions.
+</br>
+Also, 
+### This repo includes a config file! 
+### In fact, it includes two of them!
+</br>
 
-[`#alacritty`]: https://web.libera.chat/gamja/?channels=#alacritty
+The configuration file for Alacritty is named `alacritty.toml`, and is located in the config directory of this repo.
+</br>
+This fork is licensed under thr [GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Features
 
 You can find an overview over the features available in Alacritty [here](./docs/features.md).
 
-## Further information
-
-- [Announcing Alacritty, a GPU-Accelerated Terminal Emulator](https://jwilm.io/blog/announcing-alacritty/) January 6, 2017
-- [A talk about Alacritty at the Rust Meetup January 2017](https://www.youtube.com/watch?v=qHOdYO3WUTk) January 19, 2017
-- [Alacritty Lands Scrollback, Publishes Benchmarks](https://jwilm.io/blog/alacritty-lands-scrollback/) September 17, 2018
-
 ## Installation
 
-Alacritty can be installed by using various package managers on Linux, BSD,
-macOS and Windows. 
-However, it is not in Debian's apt package manager.
-See the installation instructions below.
+Alacritty can be installed by some Linux distro's package managers.
+It may be in Debian 12's apt.
+Regardless, you can use this fork to build from source
+And can do so easily using the included install script.
+See instructions below.
 
-Prebuilt binaries for macOS and Windows can also be downloaded from the
-[GitHub releases page](https://github.com/alacritty/alacritty/releases).
 
-#### Debian, and Debian-based distributions:
+### Debian, and Debian-based distributions:
 
-#### 1. Run the installation script
+### 1. Run the installation script
 ```sh
 curl -LO https://raw.githubusercontent.com/LinuxUser255/alacritty/master/scripts/alacritty_install.sh
 sh alacritty_install.sh
 ```
 
-#### 2. Setting up the configuration file `alacritty.toml`
+### 2. Setting up the configuration file `alacritty.toml`
 
 The `alacritty.toml` goes in `~/.config/alacritty`.
 You will have to make the alacritty directory yourself.
@@ -89,13 +92,12 @@ curl -LO https://raw.githubusercontent.com/LinuxUser255/BashAndLinux/main/Alacri
 ```
 </br>
 
-For everyone else, the detailed instructions to install Alacritty can be found
+More istall and build instructions to install Alacritty can be found
 [here](INSTALL.md).
 
 ### Requirements
 
 - At least OpenGL ES 2.0
-- [Windows] ConPTY support (Windows 10 version 1809 or higher)
 
 ## Configuration
 
@@ -105,42 +107,19 @@ installed.
 
 [the website]: https://alacritty.org/config-alacritty.html
 
-Alacritty doesn't create the config file for you, but it looks for one in the
-following locations:
+Alacritty doesn't create the config file for you, therefore, **_The maintainer of this fork included it for you!_**
+</br>
+
+That convenience, nor the convenience of an auto install script is not included in the original alacritty repo.
+</br>
+
+The configuration file is sourced/read from following locations:
+The default is ` ~/.config/alacritty`
 
 1. `$XDG_CONFIG_HOME/alacritty/alacritty.toml`
 2. `$XDG_CONFIG_HOME/alacritty.toml`
 3. `$HOME/.config/alacritty/alacritty.toml`
 4. `$HOME/.alacritty.toml`
-
-### Windows
-
-On Windows, the config file should be located at:
-
-`%APPDATA%\alacritty\alacritty.toml`
-
-## Contributing
-
-A guideline about contributing to Alacritty can be found in the
-[`CONTRIBUTING.md`](CONTRIBUTING.md) file.
-
-## FAQ
-
-**_Is it really the fastest terminal emulator?_**
-
-Benchmarking terminal emulators is complicated. Alacritty uses
-[vtebench](https://github.com/alacritty/vtebench) to quantify terminal emulator
-throughput and manages to consistently score better than the competition using
-it. If you have found an example where this is not the case, please report a
-bug.
-
-Other aspects like latency or framerate and frame consistency are more difficult
-to quantify. Some terminal emulators also intentionally slow down to save
-resources, which might be preferred by some users.
-
-If you have doubts about Alacritty's performance or usability, the best way to
-quantify terminal emulators is always to test them with **your** specific
-usecases.
 
 **_Why isn't feature X implemented?_**
 
@@ -151,9 +130,3 @@ good fit for Alacritty. This means you won't find things like tabs or splits
 niceties like a GUI config editor.
 
 [tmux]: https://github.com/tmux/tmux
-
-## License
-
-Alacritty is released under the [Apache License, Version 2.0].
-
-[Apache License, Version 2.0]: https://github.com/alacritty/alacritty/blob/master/LICENSE-APACHE
