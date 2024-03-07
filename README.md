@@ -35,7 +35,22 @@ Also,
 
 The configuration file for Alacritty is named `alacritty.toml`, and is located in the config directory of this repo.
 </br>
-This fork is licensed under thr [GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+This fork is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+</br>
+
+### Why GPLv3 ?
+
+
+[Why I Use the GPL and Not Cuck Licenses - by Luke Smith](https://lukesmith.xyz/articles/why-i-use-the-gpl-and-not-cuck-licenses/)
+</br>
+
+[Why I Recommend the GPL License - Mental Outlaw](https://youtu.be/zzmNA2iySEs?si=FNd8xejAVu4vxP_A)
+</br>
+
+[An Open Letter to Intel, by Andrew S. Tanenbaum, creator of Minix/](https://www.cs.vu.nl/~ast/intel/)
+</br>
+
+[What is Minix?](https://en.wikipedia.org/wiki/Minix)
 
 ## Features
 
