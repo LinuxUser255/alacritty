@@ -123,6 +123,8 @@ The default is ` ~/.config/alacritty`
 
 **_Why isn't feature X implemented?_**
 
+Some of the features mentioned below, may be created later on in this fork.
+</br>
 Alacritty has many great features, but not every feature from every other
 terminal. This could be for a number of reasons, but sometimes it's just not a
 good fit for Alacritty. This means you won't find things like tabs or splits
