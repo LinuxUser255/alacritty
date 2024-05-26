@@ -114,7 +114,8 @@ install_rustup_and_compiler() {
 clone_and_build() {
     printf "\e[1;31mInstalling Alacritty\e[0m\n"
 
-    git clone https://github.com/alacritty/alacritty.git
+    # This fork of Alacritty
+    git clone https://github.com/LinuxUser255/alacritty.git
     # Need to ensure that necssary cmds are executed in the alacritty dir
     cd alacritty
     cargo build --release
