@@ -36,7 +36,6 @@
 # Pre-build, and Post-build
 #
 # Part 1: Prebuild
-# First check for sudo privileges, and if so, then proceede.
 # Check for and, install Dependencies
 # Install the Rust compiler
 # Source the cargo environment
