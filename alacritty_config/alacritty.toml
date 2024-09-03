@@ -5,7 +5,7 @@ foreground = "#ffffff"
 
 [cursor.style]
 blinking = "On"
-shape = "Beam"
+shape = "Block"
 
 [env]
 TERM = "xterm-256color"
