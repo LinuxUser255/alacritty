@@ -49,7 +49,10 @@
 # Enable Shell completions for Zsh, Bash, and Fish
 #
 #-------------Part 1: Pre-build-------------------------------------------------------#
-#
+
+# change to sudo before running
+sudo
+
 # Install dependencies
 check_and_install_packages() {
 
